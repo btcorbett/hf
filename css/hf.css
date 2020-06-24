@@ -1,0 +1,51 @@
+:root {
+  --clr1: #f0f0f0;
+  --clr2: #ffe0e0;
+  --clr3: #fab7b7;
+  --clr4: #f5a8a8;
+  --clr5: #e19999;
+}
+
+/* font-family: 'Indie Flower', cursive; */
+
+body {
+  margin: 0;
+}
+.top {
+  display: grid;
+  grid-template-columns: 35% 3% 24% 3% 35%;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(var(--clr3), var(--clr2));
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+.links {
+  background-image: linear-gradient(var(--clr2), white);
+  display: grid;
+  grid-template-columns: 38% 8% 8% 8% 38%;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  margin: auto;
+}
+img.logo {
+  width: 100px;
+}
+.empty {
+  background-color: var(--clr4);
+  line-height: 5px;
+}
+.plant {
+  display: block;
+  width: 100%;
+}
+.head-txt {
+  box-sizing: border-box;
+  font-size: 65px;
+  font-family: 'Indie Flower', cursive;
+  margin: 0;
+  color: white;
+}
