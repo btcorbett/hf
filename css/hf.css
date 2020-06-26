@@ -11,29 +11,33 @@ font-family: 'Indie Flower', cursive;
 font-family: 'Kalam', cursive;
 font-family: 'Baloo Chettan 2', cursive;
 */
-
 body {
   margin: 0;
 }
+
 hr {
   width: 100px;
   border: none;
   border-top: 5px dotted var(--clr5);
 }
+
 .all {
   margin: 0;
   display: grid;
   grid-template-columns: auto 650px auto;
   height: 100vh;
 }
+
 .side-l {
   background-image: linear-gradient(to right, var(--clr2), white);
 }
+
 .side-r {
   background-image: linear-gradient(to left, var(--clr2), white);
 }
-.content {
-}
+
+.content {}
+
 .top {
   padding-top: 10px;
   display: grid;
@@ -41,6 +45,7 @@ hr {
   justify-content: center;
   align-items: center;
 }
+
 .head-txt {
   box-sizing: border-box;
   font-size: 80px;
@@ -50,20 +55,24 @@ hr {
   width: 500px;
   text-align: center;
 }
+
 .plant-l {
   width: 75px;
   margin: 0 auto;
 }
+
 .plant-r {
   width: 75px;
   margin: auto;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
+
 .empty {
   display: inline-block;
   width: 100px;
 }
+
 div.where {
   text-align: center;
   font-size: 30px;
@@ -72,6 +81,7 @@ div.where {
   margin: 0 auto;
   font-family: 'Baloo Chettan 2', cursive;
 }
+
 div.link-l {
   width: 75%;
   box-sizing: border-box;
@@ -85,6 +95,7 @@ div.link-l {
   margin: 30px auto;
   height: 100px;
 }
+
 div.link-r {
   width: 75%;
   box-sizing: border-box;
@@ -99,6 +110,7 @@ div.link-r {
   margin: 30px auto;
   height: 100px;
 }
+
 div.contact-form {
   width: 75%;
   box-sizing: border-box;
@@ -109,15 +121,18 @@ div.contact-form {
   padding: 10px 30px;
   display: none;
 }
+
 a.link {
   display: block;
   margin: 0;
   text-decoration: none;
 }
+
 img.logo {
   width: 75px;
   margin: 8px 0;
 }
+
 .link-txt-l {
   margin: auto;
   display: inline-block;
@@ -125,6 +140,7 @@ img.logo {
   font-family: 'Kalam', cursive;
   color: var(--clr4);
 }
+
 .link-txt-r {
   margin: auto;
   display: inline-block;
@@ -132,23 +148,26 @@ img.logo {
   font-family: 'Kalam', cursive;
   color: white;
 }
+
 .form-txt {
   display: inline-block;
   text-align: right;
-  font-size:28px;
+  font-size: 28px;
   font-family: 'Kalam', cursive;
   color: var(--clr4);
   padding-right: 15px;
 }
+
 .form-txtarea {
   display: inline-block;
   text-align: right;
-  font-size:28px;
+  font-size: 28px;
   font-family: 'Kalam', cursive;
   color: var(--clr4);
   padding-right: 15px;
 }
-.input-txt{
+
+.input-txt {
   box-sizing: border-box;
   border-radius: 50px;
   border: 2px solid var(--clr4);
@@ -160,12 +179,13 @@ img.logo {
   padding-left: 12px;
   outline-style: none;
 }
-.input-txtarea{
+
+.input-txtarea {
   box-sizing: border-box;
   border-radius: 10px;
   border: 2px solid var(--clr4);
-  margin: 10px 10px 3px;
-  font-size: 14px;
+  margin: 10px 10px 0px;
+  font-size: 18px;
   font-family: 'Baloo Chettan 2', cursive;
   color: var(--clr4);
   padding-left: 12px;
@@ -173,6 +193,7 @@ img.logo {
   max-width: 260px;
   resize: none;
 }
+
 p.form-set {
   display: grid;
   grid-template-columns: 140px 280px;
@@ -181,6 +202,7 @@ p.form-set {
   margin: 10px auto 20px;
   font-size: 0;
 }
+
 p.form-set-ta {
   display: grid;
   grid-template-columns: 140px 280px;
@@ -190,6 +212,7 @@ p.form-set-ta {
   text-align: center;
   font-size: 0;
 }
+
 .send {
   display: block;
   margin: auto;
@@ -203,8 +226,14 @@ p.form-set-ta {
   font-family: 'Baloo Chettan 2', cursive;
   font-size: 24px;
   box-shadow: 0 3px var(--clr2);
+  cursor: pointer;
 }
+
 .send:active {
   box-shadow: 0 1px var(--clr2);
-	transform: translateY(2px);
+  transform: translateY(2px);
+}
+
+#contact-div:hover {
+  cursor: pointer;
 }
