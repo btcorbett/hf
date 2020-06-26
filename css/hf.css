@@ -208,7 +208,7 @@ p.form-set-ta {
   grid-template-columns: 140px 280px;
   justify-content: center;
   align-items: flex-start;
-  margin: 10px auto 20px;
+  margin: 10px auto 10px;
   text-align: center;
   font-size: 0;
 }
