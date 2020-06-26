@@ -17,49 +17,97 @@
           <span class="head-txt">hannahfawne</span>
           <img class="plant-r" src="media/plant.png" alt="plant">
         </div>
-        <div class="where">
-          Where to find me:
-        </div>
         <div class="links">
-          <a class="link" target="_blank" href="#">
-            <div class="link-l">
+          <div id="socials">
+            <div class="where">
+              Where to find me:
+            </div>
+            <a class="link" target="_blank" href="#">
+              <div class="link-l">
+                <span class="empty"></span>
+                <img class="logo" src="media/instagram.png" alt="Instagram">
+                <span class="empty"></span>
+                <p class="link-txt-l">Instagram</p>
+                <span class="empty"></span>
+              </div>
+            </a>
+            <a class="link" target="_blank" href="https://www.tiktok.com/@hannahfawne?lang=en">
+              <div class="link-r">
+                <span class="empty"></span>
+                <p class="link-txt-r">TikTok</p>
+                <span class="empty"></span>
+                <img class="logo" src="media/tiktok.png" alt="TikTok">
+                <span class="empty"></span>
+              </div>
+            </a>
+            <a class="link" target="_blank" href="">
+              <div class="link-l">
+                <span class="empty"></span>
+                <img class="logo" src="media/twitter.png" alt="twitter">
+                <span class="empty"></span>
+                <p class="link-txt-l">Twitter</p>
+                <span class="empty"></span>
+              </div>
+            </a>
+            <a class="link" target="_blank" href="https://www.youtube.com/channel/UCDVZUVx7mw7cTNHn_-RR3zw/feed">
+              <div class="link-r">
+                <span class="empty"></span>
+                <p class="link-txt-r">YouTube</p>
+                <span class="empty"></span>
+                <img class="logo" src="media/youtube.png" alt="YouTube">
+                <span class="empty"></span>
+              </div>
+            </a>
+            <hr>
+          </div>
+          <div id="contact">
+            <div onclick="formShowHide()" id="contact-div" class="link-l">
               <span class="empty"></span>
-              <img class="logo" src="media/instagram.png" alt="Instagram">
+              <img class="logo" src="media/email.png" alt="email">
               <span class="empty"></span>
-              <p class="link-txt-l">@hannahfawne</p>
+              <p class="link-txt-l">Contact Me</p>
               <span class="empty"></span>
             </div>
-          </a>
-          <a class="link" target="_blank" href="https://www.tiktok.com/@hannahfawne?lang=en">
-            <div class="link-r">
-              <span class="empty"></span>
-              <p class="link-txt-r">@hannahfawne</p>
-              <span class="empty"></span>
-              <img class="logo" src="media/tiktok.png" alt="TikTok">
-              <span class="empty"></span>
+            <div id="form-section" class="contact-form">
+              <form class="contact" action="mailto:hello@hannahfawne.com" method="post">
+                <p class="form-set">
+                  <label for="name" class="form-txt">Name:</label>
+                  <input required type="text" name="name" class="input-txt">
+                </p>
+                <p class="form-set">
+                  <label for="email" class="form-txt">Email:</label>
+                  <input required type="email" name="email" class="input-txt">
+                </p>
+                <p class="form-set">
+                  <label for="subject" class="form-txt">Subject:</label>
+                  <input required type="text" name="subject" class="input-txt">
+                </p>
+                <p class="form-set-ta">
+                  <label for="message" class="form-txtarea">Message:</label>
+                  <textarea required name="message" rows=12 class="input-txtarea"></textarea>
+                </p>
+                <input type="submit" name="submit" class="send" value="Send">
+              </form>
             </div>
-          </a>
-          <a class="link" target="_blank" href="">
-            <div class="link-l">
-              <span class="empty"></span>
-              <img class="logo" src="media/twitter.png" alt="twitter">
-              <span class="empty"></span>
-              <p class="link-txt-l">@hannahfawne</p>
-              <span class="empty"></span>
-            </div>
-          </a>
-          <a class="link" target="_blank" href="https://www.youtube.com/channel/UCDVZUVx7mw7cTNHn_-RR3zw/feed">
-            <div class="link-r">
-              <span class="empty"></span>
-              <p class="link-txt-r">@hannahfawne</p>
-              <span class="empty"></span>
-              <img class="logo" src="media/youtube.png" alt="YouTube">
-              <span class="empty"></span>
-            </div>
-          </a>
+          </div>
         </div>
       </div>
       <div class="side-r"></div>
     </div>
+
+    <script type="text/javascript">
+      function formShowHide() {
+        var form = document.getElementById("form-section");
+        var socials = document.getElementById("socials");
+  			var state = window.getComputedStyle(form, null).getPropertyValue("display");
+  			if (state == "none") {
+  				form.style.display = "block";
+          socials.style.display = "none";
+  			} else {
+  				form.style.display = "none";
+          socials.style.display = "block";
+  			}
+      }
+    </script>
   </body>
 </html>
